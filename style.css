@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+  
+}
+nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 0 0.5%;
+    
+}
+
+.left-box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 90%;
+    width: 3vw;
+}
+.logo-name{
+    /* margin-left: 8px; */
+    font-size: 1.2vw;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
+}
+.right-box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.log-in {
+    border: none;
+    outline: none;
+    padding-top: 1.5px;
+    padding-left: 9px;
+    border-radius: 15px;
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    background-color: #1BD954;
+    height: 40%;
+    width: 5vw;
+}
+.main{
+    background-color:black;
+    height:43.05em;
+    width: 100%;
+    position: relative;
+    color: white;
+    padding: 1% 0.5%;
+    display: flex;
+    overflow-y: auto;
+}
+/* .main::-webkit-scrollbar{
+    display: none;
+} */
+.home-search{
+    padding: 5% 5%;
+    height: 100px;
+    width: 19vw;
+    background-color: rgba(90, 89, 89, 0.3);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.home{
+    margin: 0 0 15px 0;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 10px;
+}
+.home span{
+    font-size: 1.3vw;
+    font-weight: 500;
+    padding-top: 3px ;
+    text-transform: capitalize;
+}
+.search{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 10px;
+}
+.search span{
+    font-size: 1.3vw;
+    font-weight: 500;
+    padding-top: 3px ;
+    text-transform: capitalize;
+}
+.playlist{
+    height: 480px;
+    width: 19vw;
+    background-color: rgba(90, 89, 89, 0.3);
+    margin: 5% 0;
+    border-radius: 15px;
+    padding: 5% 1vw;
+    overflow-y: auto;
+}
+.playlist::-webkit-scrollbar{
+    display: none;
+}
+.playlist-card{
+    height: 10%;
+    width: 17vw;
+    background-color: transparent;
+    margin: auto;
+    margin-top:1vw;
+    display: flex;
+}
+.card-info{
+    color: #fff;
+    font-size: 1.3vw;
+    font-weight: 700;
+    padding: 2% 6%;
+    text-transform: capitalize;
+}
+.play-name{
+    font-size: 1.2vw;
+}
+.browser-space{
+    height: 38.5vw;
+    width: 78vw;
+    background-color: rgba(90, 89, 89, 0.3);
+    margin: 0.3vw 1vw;
+    border-radius: 10px;
+    padding: 0 1vw;
+    overflow-y: auto;
+}
+.browser-space::-webkit-scrollbar{
+    display: none;
+}
+
+.search-space{
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0.2px;
+   
+}
+.search-bar{
+    width: 25vw;
+    height: 2.5vw;
+    border: 2px solid #fff;
+    background-color:rgba(90, 89, 89, 0.3);
+    outline: 0;
+    border-radius: 20px;
+    padding: 0 20px;
+    color: white;
+    margin-left: 10px;
+}
+.search-box i{
+    padding-top: 10px;
+}
+.title-name{
+    text-transform: capitalize;
+    margin: 1.3vw 0 1vw 0;
+}
+.song-list{
+    height:15vw;
+    width: 98%;
+    padding: 1.5vw 2vw;
+    display: flex;
+    overflow: auto;
+}
+.song-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 0 1vw ;
+}
+.image{
+    height: 10vw;
+    width: 10vw;
+    border-radius: 10px;
+    
+}
+
+/* Control pannel  */
+.control-pannel{
+    width: 100%;
+    height: 70px;
+    position:fixed ;
+    left: 0;
+    bottom: 0;
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around ;
+}
+.play-card{
+    height: 70%;
+    width: 15vw;
+    color: white;
+    margin-left: 0.3vw;
+    margin-top: 0.7vw;
+    display: flex;
+    align-self: flex-start;
+
+    
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 4%;
+}
+.card-img{
+    height: 100%;
+    width: 3.4vw;
+    border-radius: 4px;
+}
+.song-name{
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.card-info{
+    font-size: 1vw;
+    font-weight: 400;
+}
+.control-buttons{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+
+}
+.buttons i{
+    margin: 0 20px 20px 0;
+
+}
+.range{
+    height: 1px;
+    width: 500px;
+    margin-top: 10px;
+}
+.likebut{
+    display: flex;
+    gap: 15px;
+}
